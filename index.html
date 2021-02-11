@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <style> div1 {
+
+    }</style>
     <title>BTR Bâtir</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,24 +16,37 @@
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" >
     <div id="banniere">
-    <a class="navbar-brand" href="#"><img src="BTR%20BATIR.png" class="rounded-circle" alt="LOGO" width="100" height="110"></a>
+    <a class="navbar-brand" href="#"><img src="2.png" class="rounded-circle" alt="LOGO" th="170" height="120"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <button type="button" class="btn btn-secondary">Nos Préstations</button>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <button type="button" class="btn btn-secondary">Qui sommes-nous ?</button>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Nos Préstations
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Construction Maison et Petit Immeuble</a>
+                        <a class="dropdown-item" href="#">Rénovation et Extension</a>
+                        <a class="dropdown-item" href="#">Couverture et Isolation</a>
+                    </div>&emsp;
                 </a>
             </li>
             <li class="nav-item">
                 <div class="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Qui sommes-nous ?
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Plus qu'un métier ...</a>
+                        <a class="dropdown-item" href="#">Nous vous accompagnons...</a>
+                    </div>&emsp;
+            </li>
+            <li class="nav-item">
+                <div class="droite">
+                <div class="dropdown pull-right">
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
                         Mon Compte
                     </button>
@@ -38,6 +54,9 @@
                         <a class="dropdown-item" href="#">Connexion</a>
                         <a class="dropdown-item" href="#">Inscription</a>
                     </div>
+                    </div>
+                </div>
+            </li>
     </div>
     </div>
 </nav>
@@ -50,19 +69,18 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
-            <h2 class="text-danger">Nos Prestation</h2>
-            <img src="imprevus-chantier.jpg" width="200">
-            <h5>Assistance aux Entreprises & Services </h5><img src="Coût-de-construction-dun-immeuble-1024x607.jpg" width="200">
-            <h5> Construction Maison et Petit Immeuble </h5><h5> Aménagement Intérieur et Extérieur</h5>
+            <h2><a href="test.html">Nos Prestations</a></h2>
+            <h5> Construction Maison et Petit Immeuble </h5>
             <h5>Rénovation et Extension</h5><h5> Couverture et Isolation</h5>
         </div>
         <div class="col-sm-8">
-            <h2 class="text-danger">Qui sommes-nous?</h2>
+
+            <h2><a href="test.html"> Qui sommes-nous?</a></h2>
             <h5>Plus qu'un métier ...</h5>
             <h5>Nous vous accompagons..</h5>
         </div>
         <div class="col-sm-12">
-            <h2 class="text-danger">Le projet pour vos travaux.</h2>
+            <h2><a href="test.html">Le projet pour vos travaux.</a></h2>
             <h5>Vos proposition de vos devis en plusieurs étape</h5>
         </div>
     </div>
@@ -77,7 +95,7 @@
         <div class="row">
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <img src="BTR%20BATIR.png" alt="LOGO" width="100" height="120">
+                <img src="2.png" alt="LOGO" width="190" height="">
 
                 <p>Leader du Bâtiment</p>
             </div>
@@ -89,16 +107,13 @@
 
                 <ul class="list-unstyled mb-0">
                     <li>
-                        <a href="#!" class="text-dark">Assistance aux Entreprise & Sevices</a>
+                        <a href="test.html" class="text-dark">Construction Maison et Petit Immeuble</a>
                     </li>
                     <li>
-                        <a href="#!" class="text-dark">Construction Maison et Petit Immeuble</a>
+                        <a href="test.html" class="text-dark">Rénovation et Extension</a>
                     </li>
                     <li>
-                        <a href="#!" class="text-dark">Rénovation et Extension</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark">Couverture et Isolation</a>
+                        <a href="test.html" class="text-dark">Couverture et Isolation</a>
                     </li>
                 </ul>
             </div>
