@@ -48,7 +48,7 @@
 
                         <?php
 require('config.php');
-if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[``],$_REQUEST['email'], $_REQUEST['password'])){
+if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`adresse`], $_REQUEST[`cp`], $_REQUEST['email'], $_REQUEST['password'])){
   // récupérer le nom d'utilisateur et supprimer les antislashes ajoutés par le formulaire
   $username = stripslashes($_REQUEST['username']);
   $username = mysqli_real_escape_string($conn, $username); 
