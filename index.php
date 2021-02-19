@@ -152,7 +152,7 @@ p {
                 <br>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!" class="text-dark"><h6>Email : btrbatir@hotmail.com</h6></a>
+                    <a href="mailto:btrbatir@hotmail.com" class="text-dark"><h6>Email : btrbatir@hotmail.com</h6></a>
                     </li>
                     <li>
                         
