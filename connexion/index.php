@@ -32,19 +32,19 @@
         require('config.php');
         session_start();
 
-        if (isset($_POST['username'])){
-            $username = stripslashes($_REQUEST['username']);
-            $username = mysqli_real_escape_string($conn, $username);
+        if (isset($_POST['email'])){
+            $email = stripslashes($_REQUEST['email']);
+            $email = mysqli_real_escape_string($conn, $email);
             $password = stripslashes($_REQUEST['password']);
             $password = mysqli_real_escape_string($conn, $password);
-            $query = "SELECT * FROM `users` WHERE username='$username' and password='".hash('sha256', $password)."'";
+            $query = "SELECT * FROM `utilisateurs` WHERE email='$email' and password='".hash('sha256', $password)."'";
             $result = mysqli_query($conn,$query) or die(mysql_error());
             $rows = mysqli_num_rows($result);
                 if($rows==1){
-                    $_SESSION['username'] = $username;
-                    header("Location: index.php");
+                    $_SESSION['email'] = $email;
+                    header("Location: http://btr-batir.ovh");
                 }else{
-                    $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
+                    $message = "L'email ou le mot de passe est incorrect.";
                   }
                 }
 ?>

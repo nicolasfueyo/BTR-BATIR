@@ -106,7 +106,7 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
 
                                 <label for="name"><i class="zmdi zmdi-account material-icons-house"></i></label>
 
-                                <input type="text" name="ville" id="name" placeholder="Ville" required/>
+                                <input type="text" name="ville" id="ville" placeholder="Ville" required/>
 
                             </div>
 
@@ -150,13 +150,13 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
 
                             </div>
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
 
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
 
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
 
-                            </div>
+                            </div> -->
 
                             <div class="form-group form-button">
 
