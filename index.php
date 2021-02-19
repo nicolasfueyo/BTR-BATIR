@@ -48,8 +48,15 @@
                             Mon Compte
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="connexion/index.html">Connexion</a>
-                            <a class="dropdown-item" href="inscription/index.html">Inscription</a>
+                        <?php
+	                    if (!isset($_SESSION['email'])){
+                           echo "<a class='dropdown-item' href='connexion/index.html'>Connexion</a>
+                            <a class='dropdown-item' href='inscription/index.html'>Inscription</a>";
+                        }
+                        if (isset($_SESSION['email'])){
+                            echo "<a class='dropdown-item' href='connexion/deconnexion.php'>Deconnexion</a>";
+                         }
+                        ?>
                         </div>
                         </div>
                     </ul>
