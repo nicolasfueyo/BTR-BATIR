@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="banniere">
         <a class="navbar-brand" href="#">
-            </a><a href="index.html"> <img src="images/2.png" class="rounded-circle" alt="LOGO" th="170" height="120"></a>
+            </a><a href="index.php"> <img src="images/2.png" class="rounded-circle" alt="LOGO" th="170" height="120"></a>
         <button class="navbar-toggler mr_auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
