@@ -2,7 +2,7 @@
 // Informations d'identification
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'ubuntu');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'Xqv3fui1@0705JeP29@');
 define('DB_NAME', 'btrbatir');
  
 // Connexion à la base de données MySQL 
