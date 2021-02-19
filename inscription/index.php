@@ -49,9 +49,21 @@
                         <?php
 require('config.php');
 if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`adresse`], $_REQUEST[`cp`], $_REQUEST['email'], $_REQUEST['password'])){
-  // récupérer le nom d'utilisateur et supprimer les antislashes ajoutés par le formulaire
-  $username = stripslashes($_REQUEST['username']);
-  $username = mysqli_real_escape_string($conn, $username); 
+  // récupérer le nom et supprimer les antislashes ajoutés par le formulaire
+  $nom = stripslashes($_REQUEST['nom']);
+  $nom = mysqli_real_escape_string($conn, $nom); 
+  // récupérer le nom et supprimer les antislashes ajoutés par le formulaire
+  $prenom = stripslashes($_REQUEST['prenom']);
+  $prenom = mysqli_real_escape_string($conn, $prenom); 
+  // récupérer le nom et supprimer les antislashes ajoutés par le formulaire
+  $ville = stripslashes($_REQUEST['ville']);y
+  $ville = mysqli_real_escape_string($conn, $ville); 
+  // récupérer le nom et supprimer les antislashes ajoutés par le formulaire
+  $adresse = stripslashes($_REQUEST['adresse']);
+  $adresse = mysqli_real_escape_string($conn, $adresse); 
+  // récupérer le nom et supprimer les antislashes ajoutés par le formulaire
+  $cp = stripslashes($_REQUEST['cp']);
+  $cp = mysqli_real_escape_string($conn, $cp); 
   // récupérer l'email et supprimer les antislashes ajoutés par le formulaire
   $email = stripslashes($_REQUEST['email']);
   $email = mysqli_real_escape_string($conn, $email);
@@ -59,8 +71,8 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
   $password = stripslashes($_REQUEST['password']);
   $password = mysqli_real_escape_string($conn, $password);
   //requéte SQL + mot de passe crypté
-    $query = "INSERT into `utilisateur` (username, email, password)
-              VALUES ('$username', '$email', '".hash('sha256', $password)."')";
+    $query = "INSERT into `utilisateur` (nom, prenom, ville, adresse, cp, email, password)
+              VALUES ('$nom', '$prenom', '$ville', '$adresse', '$cp', '$email', '".hash('sha256', $password)."')";
   // Exécuter la requête sur la base de données
     $res = mysqli_query($conn, $query);
     if($res){
@@ -78,7 +90,39 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
 
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
 
-                                <input type="text" name="name" id="name" placeholder="Nom" required/>
+                                <input type="text" name="nom" id="name" placeholder="Nom" required/>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+
+                                <input type="text" name="prenom" id="name" placeholder="Prenom" required/>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="name"><i class="zmdi zmdi-account material-icons-house"></i></label>
+
+                                <input type="text" name="ville" id="name" placeholder="Ville" required/>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="adresse"><i class="zmdi zmdi-account material-icons-name"></i></label>
+
+                                <input type="text" name="adresse" id="adresse" placeholder="Adresse" required/>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="code postal"><i class="zmdi zmdi-account material-icons-name"></i></label>
+
+                                <input type="text" name="cp" id="cp" placeholder="Nom" required/>
 
                             </div>
 
@@ -94,7 +138,7 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
 
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
 
-                                <input type="password" name="pass" id="pass" placeholder="Mot de passe" required/>
+                                <input type="password" name="password" id="pass" placeholder="Mot de passe" required/>
 
                             </div>
 
@@ -102,7 +146,7 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
 
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
 
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Confirmer votre mot de passe" required/>
+                                <input type="password" name="re_password" id="re_pass" placeholder="Confirmer votre mot de passe" required/>
 
                             </div>
 
@@ -121,6 +165,8 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
                             </div>
 
                         </form>
+                        
+                        <?php } ?>
 
                     </div>
 
