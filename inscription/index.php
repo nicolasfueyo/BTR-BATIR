@@ -56,7 +56,7 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
   $prenom = stripslashes($_REQUEST['prenom']);
   $prenom = mysqli_real_escape_string($conn, $prenom); 
   // récupérer le nom et supprimer les antislashes ajoutés par le formulaire
-  $ville = stripslashes($_REQUEST['ville']);y
+  $ville = stripslashes($_REQUEST['ville']);
   $ville = mysqli_real_escape_string($conn, $ville); 
   // récupérer le nom et supprimer les antislashes ajoutés par le formulaire
   $adresse = stripslashes($_REQUEST['adresse']);
