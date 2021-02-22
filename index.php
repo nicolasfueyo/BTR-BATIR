@@ -2,11 +2,11 @@
   // Initialiser la session
   session_start();
   date_default_timezone_set('Europe/Paris');
-//   // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
+//  Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
 //   if(!isset($_SESSION["email"])){
-//     // header("Location: login.php");
-//     // exit(); 
-  }
+//  header("Location: login.php");
+// exit(); 
+//   }
 ?>
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
