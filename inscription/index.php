@@ -78,7 +78,7 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
     if($res){
        echo "<div class='sucess'>
              <h3>Vous êtes inscrit avec succès.</h3>
-             <p>Cliquez ici pour vous <a href='login.php'>connecter</a></p>
+             <p>Cliquez ici pour vous <a href='https://btr-batir/connexion/index.php'>connecter</a></p>
        </div>";
     }
 }else{
@@ -122,7 +122,7 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
 
                                 <label for="code postal"><i class="zmdi zmdi-account material-icons-name"></i></label>
 
-                                <input type="text" name="cp" id="cp" placeholder="Nom" required/>
+                                <input type="text" name="cp" id="cp" placeholder="Code postal" required/>
 
                             </div>
 
@@ -174,7 +174,7 @@ if (isset($_REQUEST['nom'], $_REQUEST[`prenom`], $_REQUEST[`ville`], $_REQUEST[`
 
                         <figure><img src="images/BTR-BATIR.png" alt="sing up image"></figure>
 
-                        <a href="https://btr-batir.000webhostapp.com/connexion/" class="signup-image-link">Je suis déja inscrit</a>
+                        <a href="https://btr-batir.ovh/connexion/" class="signup-image-link">Je suis déja inscrit</a>
 
                     </div>
 

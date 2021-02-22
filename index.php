@@ -1,3 +1,12 @@
+<?php
+  // Initialiser la session
+  session_start();
+  // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
+  if(!isset($_SESSION["email"])){
+    header("Location: login.php");
+    exit(); 
+  }
+?>
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -50,8 +59,8 @@
                         <div class="dropdown-menu">
                         <?php
 	                    if (!isset($_SESSION['email'])){
-                           echo "<a class='dropdown-item' href='connexion/index.html'>Connexion</a>
-                            <a class='dropdown-item' href='inscription/index.html'>Inscription</a>";
+                           echo "<a class='dropdown-item' href='connexion/index.php'>Connexion</a>
+                            <a class='dropdown-item' href='inscription/index.php'>Inscription</a>";
                         }
                         if (isset($_SESSION['email'])){
                             echo "<a class='dropdown-item' href='connexion/deconnexion.php'>Deconnexion</a>";

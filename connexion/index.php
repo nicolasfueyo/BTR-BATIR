@@ -65,7 +65,7 @@
 
                         <figure><img src="images/BTR-BATIR.png" alt="sing up image"></figure>
 
-                        <a href="https://btr-batir.000webhostapp.com/inscription" class="signup-image-link">Créer un
+                        <a href="https://btr-batir.ovh/inscription" class="signup-image-link">Créer un
                             compte</a>
 
                     </div>
