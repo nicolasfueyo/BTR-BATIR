@@ -47,7 +47,7 @@ date_default_timezone_set('Europe/Paris');
             $rows = mysqli_num_rows($result);
                 if($rows==1){
                     $_SESSION['email'] = $email;
-                    header("Location: http://btr-batir.ovh");
+                    header("Location: https://btr-batir.ovh");
                 }else{
                     $message = "L'email ou le mot de passe est incorrect.";
                   }
@@ -81,7 +81,7 @@ date_default_timezone_set('Europe/Paris');
 
                         <h2 class="form-title">Se connecter</h2>
 
-                        <form method="POST" class="register-form" id="login-form">
+                        <form method="POST" class="register-form" id="login-form" action="">
 
                             <div class="form-group">
 
@@ -95,7 +95,7 @@ date_default_timezone_set('Europe/Paris');
 
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
 
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Mot de passe"
+                                <input type="password" name="password" id="password" placeholder="Mot de passe"
                                     required />
 
                             </div>
