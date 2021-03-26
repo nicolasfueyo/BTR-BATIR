@@ -39,11 +39,11 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                            Qui sommes-nous ?
+                            Contact & Devis
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="+metier.html">Plus qu'un métier ...</a>
-                            <a class="dropdown-item" href="accompagnons.html">Nous vous accompagnons ...</a>
+                            <a class="dropdown-item" href="****">Contact</a>
+                            <a class="dropdown-item" href="****">Devis</a>
                         </div>&emsp;
                 </li>
                 <li class="nav-item">
